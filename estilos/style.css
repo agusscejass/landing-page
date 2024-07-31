@@ -1,0 +1,60 @@
+/*----------- FUENTES ------------*/
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+/*---------- VARIABLES ----------*/
+:root {
+    --background: #ebebeb;
+    --bg-nav: #202020;
+}
+
+/*---------- RESET -------------*/
+
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+    font-family: "Poppins", sans-serif;
+}
+
+body {
+    background-color: var(--background);
+}
+
+/*------------- HEADER --------------*/
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: var(--bg-nav);
+    height: 80px;
+    padding: 0 50px;
+    margin: 15px 70px;
+}
+
+/*------------- LOGO ---------------*/
+
+.logo {
+    height: 90%;
+}
+
+/*----------- NAV -------------*/
+.navbar .navbar-list{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.navbar-list {
+    gap: 30px;
+}
+
+.navbar-list a {
+    color: white;
+    font-size: 14px;
+    font-weight: 600;
+}
+
+
+
