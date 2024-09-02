@@ -1,158 +1,351 @@
 /*----------- FUENTES ------------*/
-@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
 
 /*---------- VARIABLES ----------*/
 :root {
-    --background: #ebebeb;
-    --bg-nav: #202020;
+  --background: #ebebeb;
+  --bg-nav: #202020;
 }
 
 /*---------- RESET -------------*/
 
 * {
-    margin: 0px;
-    padding: 0px;
-    box-sizing: border-box;
-    text-decoration: none;
-    list-style: none;
-    font-family: "Poppins", sans-serif;
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+  text-decoration: none;
+  list-style: none;
+  font-family: "Poppins", sans-serif;
+}
+
+html {
+  scroll-behavior: smooth;
 }
 
 body {
-    background-color: #02050e;
+  background-color: #02050e;
 }
 
 /*------------- HEADER --------------*/
 header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    background: linear-gradient(to top, #02050e, rgba(131,61,202,0.5));
-    height: 80px;
-    padding: 0 50px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: linear-gradient(to top, #02050e, rgba(131, 61, 202, 0.5));
+  height: 80px;
+  padding: 0 30px;
 }
 
 /*------------- LOGO ---------------*/
 
 .logo {
-    height: 70%;
-    padding-left: 50px;
-    cursor: pointer;
+  height: 70%;
+  cursor: pointer;
 }
 
 /*----------- NAV -------------*/
-.navbar .navbar-list{
-    display: flex;
-    align-items: center;
-    justify-content: center;
+.navbar .navbar-list {
+  display: flex;
 }
 
 .navbar-list {
-    gap: 30px;
+  gap: 30px;
 }
 
 .navbar-list a {
-    color: white;
-    font-size: 1rem;
-    font-weight: 600;
+  color: white;
+  font-size: 1rem;
+  font-weight: 600;
+  transition: 0.5s;
 }
 
-.navbar-list a:hover {
-    font-size: 20px;
-    transition: 0.5s;
+#menu-toogle, .menu-label {
+  display: none;
 }
 
 /*--------- HERO ---------*/
 #inicio {
-    width: 100%;
-    height: 561px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 20px;
+  width: 100%;
+  height: 561px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
 }
 
 #inicio img {
-    width: 500px;
-    height: 350px;
-    border-radius: 2rem;
+  width: 500px;
+  height: 350px;
+  border-radius: 2rem;
 }
 
 .portada {
-    width: 50%;
-    height: 70%;
-    padding: 0 30px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    gap: 15px;
+  width: 50%;
+  height: 70%;
+  padding: 0 30px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 15px;
 }
 
 .portada h2 {
-    margin-top: 10px;
-    width: 70%;
-    text-align: center;
-    color: var(--background);
-    font-weight: 700;
-    font-size: 48px;
-    align-self: center;
-    background: linear-gradient(to top, #10cfd0, #c33ad6);
-    color: transparent;
-    background-clip: text;
+  margin-top: 10px;
+  width: 70%;
+  text-align: center;
+  color: var(--background);
+  font-weight: 700;
+  font-size: 48px;
+  align-self: center;
+  background: linear-gradient(to top, #10cfd0, #c33ad6);
+  color: transparent;
+  background-clip: text;
 }
 
 .portada p {
-    width: 70%;
-    align-self: center;
-    font-size: 14px;
-    text-align: center;
-    color: #adb9c7;
+  width: 70%;
+  align-self: center;
+  font-size: 14px;
+  text-align: center;
+  color: #adb9c7;
 }
 
 /*--------- BOTONES HERO ----------*/
 
 .button-portada {
-    width: 70%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding: 20px;
-    gap: 20px;
+  width: 70%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  gap: 20px;
 }
 
 .button-portada button {
-    height: 50px;
-    border-radius: 5px;
-    border: none;
-    cursor: pointer;
-    background-color: #1E90FF;
-    color: white;
+  height: 50px;
+  border-radius: 5px;
+  border: none;
+  cursor: pointer;
+  background-color: #1e90ff;
+  color: white;
 }
 
 .button-portada span {
-    padding: 20px;
-    text-align: center;
+  padding: 20px;
+  text-align: center;
 }
 
 /*------------ ABOUT ------------*/
 .about {
-    padding: 30px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+  padding: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .about-text {
-    width: 50%;
-    text-align: center;
+  width: 50%;
+  text-align: center;
 }
 
 .about-text p {
-    color: #adb9c7;
-    font-size: 20px;
+  color: #adb9c7;
+  font-size: 20px;
 }
 
 .about-text span {
-    color: white;
+  color: white;
+}
+
+/*-------- PRODUCTOS ---------*/
+.container-product {
+  margin: 20px;
+}
+
+.container-product h2 {
+  font-weight: 700;
+  font-size: 48px;
+  align-self: center;
+  background: linear-gradient(to top, #10cfd0, #c33ad6);
+  color: transparent;
+  background-clip: text;
+}
+
+.container-product h2,
+p {
+  text-align: center;
+}
+
+.container-product p {
+  padding-top: 10px;
+  color: #adb9c7;
+}
+
+.container-cards {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px 0;
+  margin: auto;
+  width: 80%;
+  gap: 20px;
+}
+
+.cards {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 330px;
+  height: 330px;
+  border-radius: 25px;
+  gap: 15px;
+  background-color: #272d37;
+  padding: 10px;
+}
+
+.cards img {
+  width: 300px;
+  height: 120px;
+}
+
+.cards h2,
+p {
+  color: white;
+}
+
+.cards p {
+  color: #adb9c7;
+}
+
+/*--------- OFERTAS -----------*/
+
+.container-ofertas {
+  margin-top: 40px;
+  width: 90%;
+  margin: 0 auto;
+}
+.container-ofertas > h2 {
+  font-weight: 700;
+  font-size: 48px;
+  align-self: center;
+  background: linear-gradient(to top, #10cfd0, #c33ad6);
+  color: transparent;
+  background-clip: text;
+  text-align: center;
+}
+
+.container-ofertas p {
+  color: #adb9c7;
+  padding-top: 10px;
+  width: 70%;
+  margin: 0 auto;
+}
+
+.cards-oferta {
+  width: 250px;
+  height: 250px;
+  background-color: #272d37;
+  border-radius: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.cards-oferta img {
+  width: 400px;
+  height: 150px;
+}
+
+.cards-oferta h2 {
+  font-size: 18px;
+  color: white;
+}
+
+.descuento {
+  display: flex;
+  justify-content: space-around;
+  width: 90%;
+  margin-top: 20px;
+}
+
+.subrayado {
+  text-decoration: line-through;
+  position: relative;
+  display: inline-block;
+}
+
+.subrayado::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 50%;
+  border-top: 3px solid #8e5ec5;
+  transform: translateY(-50%);
+}
+
+.descuento span {
+  color: #8e5ec5;
+  font-weight: 700;
+  font-size: 20px;
+}
+
+/*---------- CONTACTO ----------*/
+.container-contacto {
+  width: 100%;
+  height: 330px;
+  margin-top: 60px;
+  background-color: #272d37;
+}
+
+.caja-contacto {
+  height: 60%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 5px;
+  padding: 10px 0;
+}
+
+.caja-contacto h2 {
+  padding-bottom: 20px;
+  font-size: 30px;
+  color: white;
+}
+
+.redes-sociales {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 15px;
+  padding: 10px 0;
+}
+
+.redes-sociales img{
+  width: 30px;
+  height: 30px;
+  cursor: pointer;
+}
+
+.fb-size,
+.ig-size,
+.x-size {
+  transition: transform 0.3s ease;
+}
+
+.fb-size:hover,
+.ig-size:hover,
+.x-size:hover {
+  transform: scale(1.2);
+}
+
+.copyright p {
+  padding: 20px 0;
+}
+
+.copyright span {
+  cursor: pointer;
 }

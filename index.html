@@ -1,47 +1,168 @@
 <!DOCTYPE html>
 <html lang="es">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./estilos/style.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./estilos/style.css" />
+    <link rel="stylesheet" href="./mediaqueries/mediaqueries.css" />
+    <script src="https://kit.fontawesome.com/32d9d2e20f.js" crossorigin="anonymous"></script>
     <title>Landing Page</title>
-</head>
-<body>
+  </head>
+  <body>
     <!--Header-->
     <header>
-        <!--Logo-->
-        <img src="./img/logo.png" alt="joystick-logo" class="logo">
-        <!--Barra Navegacion-->
-        <nav class="navbar">
-            <ul class="navbar-list">
-                <li><a href="#">Inicio</a></li>
-                <li><a href="#">Productos</a></li>
-                <li><a href="#">Ofertas</a></li>
-                <li><a href="#">Contacto</a></li>
-            </ul>
-        </nav>
+      <!--Logo-->
+      <img src="./img/logo.png" alt="joystick-logo" class="logo" />
+      <!--Barra Navegacion-->
+      <nav class="navbar">
+        <label for="menu-toogle" class="menu-label">
+          <i class="fa-solid fa-bars"></i>
+        </label>
+        <input type="checkbox" id="menu-toogle">
+        <ul class="navbar-list">
+          <li><a href="index.html">Inicio</a></li>
+          <li><a href="#product-cards">Productos</a></li>
+          <li><a href="#ofertas">Ofertas</a></li>
+          <li><a href="#contacto">Contacto</a></li>
+        </ul>
+      </nav>
     </header>
-    
+
     <!--HERO-->
     <main>
-        <section id="inicio">
-            <div class="portada">
-                <h2>Transforma tu experiencia de juego</h2>
-                <p>Descubre la mejor selección de accesorios gamer diseñados para llevar tu juego al siguiente nivel. Desde teclados mecánicos y ratones de precisión hasta auriculares envolventes, encuentra todo lo que necesitas para crear el setup de tus sueños.</p>
-                <div class="button-portada">
-                    <button><span>Nuesta coleccion</span></button>
-                    <button><span>Ofertas exclusivas</span></button>
-                </div>
-            </div>
-            <img src="./img/acb14862933ccb141c4e809bc944dc30.png" alt="setup">
-        </section>
-
-        <div class="about">
-            <div class="about-text">
-                <p>En <span>GAMING ZONE</span> somos apasionados del gaming. Ofrecemos una selección de accesorios gamer de alta calidad, incluyendo teclados mecánicos, ratones ergonómicos y auriculares envolventes. Trabajamos con las mejores marcas para asegurar que encuentres el equipo perfecto que potencie tu rendimiento y haga de cada sesión de juego una experiencia inolvidable.</p>
-            </div>
+      <!--Inicio-->
+      <section id="inicio">
+        <div class="portada">
+          <h2>Transforma tu experiencia de juego</h2>
+          <p>
+            Descubre la mejor selección de accesorios gamer diseñados para
+            llevar tu juego al siguiente nivel. Desde teclados mecánicos y
+            ratones de precisión hasta auriculares envolventes, encuentra todo
+            lo que necesitas para crear el setup de tus sueños.
+          </p>
+          <div class="button-portada">
+            <button><span>Nuesta coleccion</span></button>
+            <button><span>Ofertas exclusivas</span></button>
+          </div>
         </div>
+        <img src="./img/acb14862933ccb141c4e809bc944dc30.png" alt="setup" />
+      </section>
+      <!--About-->
+      <div class="about">
+        <div class="about-text">
+          <p>
+            En <span>GAMING ZONE</span> somos apasionados del gaming. Ofrecemos
+            una selección de accesorios gamer de alta calidad, incluyendo
+            teclados mecánicos, ratones ergonómicos y auriculares envolventes.
+            Trabajamos con las mejores marcas para asegurar que encuentres el
+            equipo perfecto que potencie tu rendimiento y haga de cada sesión de
+            juego una experiencia inolvidable.
+          </p>
+        </div>
+      </div>
+      <!--Productos-->
+      <section id="product-cards">
+        <div class="container-product">
+          <h2>Descubre nuestros accesorios</h2>
+          <p>
+            Explora nuestra seleccion de accesorios para gamers y lleva tu
+            experiencia de juego al siguiente nivel
+          </p>
+        </div>
+        <!--Cards-->
+        <div class="container-cards">
+          <div class="cards">
+            <img src="./img/mouse.png" alt="mouse-gaming" />
+            <h2>Mouse x1000</h2>
+            <p>
+              Precisión láser, velocidad ajustable y ergonomia para sesiones de
+              juego prolongadas.
+            </p>
+          </div>
+          <div class="cards">
+            <img src="./img/teclado.png" alt="teclado-gaming" />
+            <h2>Teclado K500</h2>
+            <p>
+              Teclas mecánicas, iluminación RGB personalizable y macro teclas
+              para una experiencia de juego inmersiva.
+            </p>
+          </div>
+          <div class="cards">
+            <img src="./img/auriculares.png" alt="auriculares-gaming" />
+            <h2>Auriculares H700</h2>
+            <p>
+              Sonido envolvente 7.1, micrófono retractable y comodidad para
+              largas sesiones de juego.
+            </p>
+          </div>
+        </div>
+      </section>
+      <!--Ofertas-->
+      <section id="ofertas">
+        <div class="container-ofertas">
+          <h2 class="title-ofertas">Descuentos Exclusivos</h2>
+          <p class="p-ofertas">
+            Encuenta las mejores ofertas en accesorios y juegos para gamers.
+            Descubre descuentos exlusivos y promociones especiales que te
+            permitirán ahorrar dinero y mejorar tu experiencia de juego.
+          </p>
+          <div class="container-cards">
+            <div class="cards-oferta">
+              <img src="./img/silla-gamer.png" alt="silla-gamer" />
+              <h2>Silla Gamer Ergonomica</h2>
+              <div class="descuento">
+                <span class="subrayado">$249.999</span>
+                <span>$149.999</span>
+              </div>
+            </div>
+            <div class="cards-oferta">
+              <img src="./img/monitor.png" alt="monitor" />
+              <h2>Monitor Gigabyte 144Hz</h2>
+              <div class="descuento">
+                <span class="subrayado">$400.000</span>
+                <span>$370.000</span>
+              </div>
+            </div>
+            <div class="cards-oferta">
+              <img src="./img/casco-rv.png" alt="casco-realidad-virtual" />
+              <h2>Casco Realidad Virtual</h2>
+              <div class="descuento">
+                <span class="subrayado">$250.000</span>
+                <span>$200.000</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!--Contacto-->
+      <section id="contacto">
+        <div class="container-contacto">
+          <div class="caja-contacto">
+            <h2>Contacto</h2>
+            <p>
+              Direccion: San Martin 1447, Buenos Aires - Argentina | Telefono:
+              4728-3049 | E-mail: gamingzone@gmail.com
+            </p>
+            <p>Horario: Lunes a Jueves: 9hs a 18hs | Viernes: 9hs a 15hs</p>
+          </div>
+          <div class="redes-sociales">
+            <img src="./img/redes-sociales/facebook.png" alt="logo-facebook" class="fb-size"/>
+            <img
+              src="./img/redes-sociales/logotipo-de-instagram.png"
+              alt="logo-instagram"
+              class="ig-size"
+            />
+            <img src="./img/redes-sociales/x.png" alt="logo-x" class="x-size"/>
+          </div>
+          <div class="copyright">
+            <p>
+              © Copyright 2024 Gaming Zone | <span>Aviso Legal</span> |
+              <span>Politica de privacidad</span> |
+              <span>Politica de cookies</span>
+            </p>
+          </div>
+        </div>
+      </section>
     </main>
-
-</body>
+  </body>
 </html>
