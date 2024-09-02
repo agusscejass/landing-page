@@ -100,3 +100,18 @@
         height: 100%;
     }
 }
+
+@media (max-width: 414px) {
+    .portada h2 {
+        width: 80%;
+    }
+
+    .portada p {
+        width: 50%;
+        text-align: center;
+    }
+
+    .about-text {
+        margin-top: 50px;
+    }
+}
