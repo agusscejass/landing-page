@@ -66,6 +66,8 @@
     .portada p {
         width: 50%;
         text-align: center;
+        font-size: 16px;
+        line-height: 1.5;
     }
 
     .button-portada {
@@ -73,7 +75,8 @@
     }
 
     .about-text p {
-        font-size: 14px;
+        font-size: 16px;
+        line-height: 1.5;
     }
 
     .container-product h2 {
@@ -81,7 +84,8 @@
     }
 
     .container-product p {
-        font-size: 14px;
+        font-size: 16px;
+        line-height: 1.5;
     }
 
     .container-cards {
@@ -93,7 +97,8 @@
     }
 
     .container-ofertas .p-ofertas {
-        font-size: 14px;
+        font-size: 16px;
+        line-height: 1.5;
     }
 
     .container-contacto {
@@ -109,6 +114,12 @@
     .portada p {
         width: 50%;
         text-align: center;
+        font-size: 16px;
+    }
+
+    .about-text p {
+        font-size: 16px;
+        line-height: 1.5;
     }
 
     .about-text {
@@ -117,5 +128,15 @@
 
     .button-portada {
         margin-top: 20px;
+    }
+
+    .container-product p {
+        font-size: 16px;
+        line-height: 1.5;
+    }
+
+    .container-ofertas .p-ofertas {
+        font-size: 16px;
+        line-height: 1.5;
     }
 }
